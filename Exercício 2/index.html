@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aumento de Salário</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Exercício 1/style.css">
 </head>
 <body>
     <div class="box">
@@ -13,13 +13,18 @@
         <input type="number" name="n1" id="n1">
         <br>
         <button onclick="calcular()">Calcular</button>
-        <button onclick="limpar()">Limpar</button><br>
+        <button onclick="limpar()">Limpar</button>
+        <a href="../index.html"><Button>Voltar</Button></a><br>
 
         <label for="res">Resultado:</label>
         <!-- <input type="number" name="res" id="res" readonly> -->
          <p id="res">Aqui irá aparecer o resultado...</p>
         <br>
     </div>
+
+    <!-- Div onde a data e hora serão exibidas -->
+    <div id="datetime" style="margin-top: 20px; font-size: 18px; font-weight: bold;"></div>
+
     <script src="codigo.js"></script>
 </body>
 </html>

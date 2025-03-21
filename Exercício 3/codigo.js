@@ -24,3 +24,18 @@ function calcular() {
 function limpar() {
     res.innerHTML = "";
 }
+
+function atualizarDataHora() {
+    let agora = new Date();
+    
+    // Formatar data e hora
+    let data = agora.toLocaleDateString("pt-BR"); // Formato: dd/mm/aaaa
+    let hora = agora.toLocaleTimeString("pt-BR"); // Formato: hh:mm:ss
+
+    // Atualizar a div no HTML
+    document.getElementById("datetime").innerHTML = `Data e Hora Atual: ${data} - ${hora}`;
+}
+
+// Atualiza imediatamente e depois a cada segundo
+atualizarDataHora();
+setInterval(atualizarDataHora, 1000);
